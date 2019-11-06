@@ -1,0 +1,11 @@
+= spring-cloud-bootstrapping-configuration-repository
+Spring Cloud Bootstrapping (configuration repository).
+
+
+
+== Modules
+There are a number of modules in https://github.com/kinlhp/spring-cloud-bootstrapping[Spring Cloud Bootstrapping], here is a quick overview:
+
+
+=== spring-cloud-bootstrapping-discovery
+https://github.com/kinlhp/spring-cloud-bootstrapping/tree/master/spring-cloud-bootstrapping-project/spring-cloud-bootstrapping-discovery[Discovery server] properties.
