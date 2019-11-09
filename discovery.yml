@@ -3,11 +3,11 @@ eureka:
     fetchRegistry: false
     registerWithEureka: false
     serviceUrl:
-      defaultZone: http://discovery:8080/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   instance:
-    hostname: discovery
+    hostname: ${HOSTNAME}
 server:
-  port: 8080
+  port: 8761
 spring:
   application:
     name: discovery
