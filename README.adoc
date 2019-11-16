@@ -9,3 +9,7 @@ There are a number of modules in https://github.com/kinlhp/spring-cloud-bootstra
 
 === spring-cloud-bootstrapping-discovery
 https://github.com/kinlhp/spring-cloud-bootstrapping/tree/master/spring-cloud-bootstrapping-project/spring-cloud-bootstrapping-discovery[Discovery server] properties.
+
+
+=== spring-cloud-bootstrapping-gateway
+https://github.com/kinlhp/spring-cloud-bootstrapping/tree/master/spring-cloud-bootstrapping-project/spring-cloud-bootstrapping-gateway[Gateway server] properties.
