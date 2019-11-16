@@ -1,0 +1,28 @@
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://discovery:8082/eureka/
+hystrix:
+  command:
+    # Discovery server
+    discovery:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway
+zuul:
+  routes:
+    # Discovery server
+    discovery:
+      path: /discovery/**
+      sensitive-headers:
+        - Authorization
+        - Cookie
+        - Set-Cookie
+      url: http://discovery:8082
