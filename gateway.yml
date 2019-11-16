@@ -1,6 +1,8 @@
 eureka:
   client:
     registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://discovery:8082/eureka/
 hystrix:
   command:
     # Discovery server
