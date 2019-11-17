@@ -1,0 +1,10 @@
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://discovery:8082/eureka/
+server:
+  port: 8083
+spring:
+  application:
+    name: provider
