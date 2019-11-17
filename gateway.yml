@@ -11,6 +11,12 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 60000
+    # Service provider
+    provider:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
 server:
   port: 8080
 spring:
@@ -26,3 +32,11 @@ zuul:
         - Cookie
         - Set-Cookie
       url: http://discovery:8082
+    # Service provider
+    provider:
+      path: /provider/**
+      sensitive-headers:
+        - Authorization
+        - Cookie
+        - Set-Cookie
+      url: http://provider:8083

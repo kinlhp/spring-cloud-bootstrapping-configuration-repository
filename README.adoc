@@ -13,3 +13,7 @@ https://github.com/kinlhp/spring-cloud-bootstrapping/tree/master/spring-cloud-bo
 
 === spring-cloud-bootstrapping-gateway
 https://github.com/kinlhp/spring-cloud-bootstrapping/tree/master/spring-cloud-bootstrapping-project/spring-cloud-bootstrapping-gateway[Gateway server] properties.
+
+
+=== spring-cloud-bootstrapping-provider
+https://github.com/kinlhp/spring-cloud-bootstrapping/tree/master/spring-cloud-bootstrapping-project/spring-cloud-bootstrapping-provider[Service provider] properties.
