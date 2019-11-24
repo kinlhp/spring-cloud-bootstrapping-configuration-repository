@@ -1,0 +1,14 @@
+eureka:
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://discovery:8082/eureka/
+server:
+  port: 8084
+spring:
+  application:
+    name: consumer
+provider:
+  random-greeting:
+    resource-uri: /greetings
+    service-id: provider
