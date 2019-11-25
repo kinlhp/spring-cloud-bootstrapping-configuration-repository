@@ -5,6 +5,12 @@ eureka:
       defaultZone: http://discovery:8082/eureka/
 hystrix:
   command:
+    # Service consumer
+    consumer:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
     # Discovery server
     discovery:
       execution:
@@ -24,6 +30,14 @@ spring:
     name: gateway
 zuul:
   routes:
+    # Service consumer
+    consumer:
+      path: /consumer/**
+      sensitive-headers:
+        - Authorization
+        - Cookie
+        - Set-Cookie
+      url: http://consumer:8084
     # Discovery server
     discovery:
       path: /discovery/**
