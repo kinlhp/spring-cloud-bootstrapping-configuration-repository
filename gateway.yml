@@ -2,7 +2,7 @@ eureka:
   client:
     registry-fetch-interval-seconds: 5
     service-url:
-      defaultZone: http://discovery:8082/eureka/
+      defaultZone: http://discovery/eureka/
 hystrix:
   command:
     # Service consumer
@@ -24,7 +24,7 @@ hystrix:
           thread:
             timeoutInMilliseconds: 60000
 server:
-  port: 8080
+  port: 80
 spring:
   application:
     name: gateway
@@ -37,7 +37,7 @@ zuul:
         - Authorization
         - Cookie
         - Set-Cookie
-      url: http://consumer:8084
+      url: http://consumer
     # Discovery server
     discovery:
       path: /discovery/**
@@ -45,7 +45,7 @@ zuul:
         - Authorization
         - Cookie
         - Set-Cookie
-      url: http://discovery:8082
+      url: http://discovery
     # Service provider
     provider:
       path: /provider/**
@@ -53,4 +53,4 @@ zuul:
         - Authorization
         - Cookie
         - Set-Cookie
-      url: http://provider:8083
+      url: http://provider
