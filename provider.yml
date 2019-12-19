@@ -8,3 +8,11 @@ server:
 spring:
   application:
     name: provider
+  cloud:
+    loadbalancer:
+      ribbon:
+        # Or remove spring-cloud-starter-netflix-ribbon from your project.
+        enabled: false
+  profiles:
+    active:
+      - default

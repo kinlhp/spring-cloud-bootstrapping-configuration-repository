@@ -11,3 +11,11 @@ server:
 spring:
   application:
     name: discovery
+  cloud:
+    loadbalancer:
+      ribbon:
+        # Or remove spring-cloud-starter-netflix-ribbon from your project.
+        enabled: false
+  profiles:
+    active:
+      - default
